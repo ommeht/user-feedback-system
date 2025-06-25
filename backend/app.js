@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
-// const feedbackRoutes = require('./routes/feedback'); // ✅ Make sure this path is correct
+
 const feedbackRoutes = require('./routes/feedback'); 
 
 
@@ -15,11 +15,11 @@ app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-}).then(() => console.log("✅ MongoDB connected successfully"))
-  .catch(err => console.error("❌ DB connection error:", err));
+}).then(() => console.log(" MongoDB connected successfully"))
+  .catch(err => console.error(" DB connection error:", err));
 
-app.use('/feedback', feedbackRoutes); // ✅ This should be a function
+app.use('/feedback', feedbackRoutes); 
 
 app.listen(process.env.PORT, () => {
-  console.log(`🚀 Server running on port ${process.env.PORT}`);
+  console.log(` Server running on port ${process.env.PORT}`);
 });
