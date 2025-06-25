@@ -28,31 +28,24 @@ A full-stack web application that collects user feedback using a React frontend,
 ```bash
 git clone https://github.com/ommeht/user-feedback-system.git
 cd user-feedback-system
+
+
 2. Setup and Run the Backend
-bash
-Copy
-Edit
 cd backend
 npm install
-Create a .env file in the backend folder with the following:
 
+Create a .env file in the backend folder with the following:
 env
-Copy
-Edit
+
 MONGODB_URI=mongodb://localhost:27017/feedbackdb
 PORT=5000
-Then run the backend server:
 
-bash
-Copy
-Edit
+Then run the backend server:
 node app.js
+
+
 3. Setup and Run the Frontend
 In a new terminal window:
-
-bash
-Copy
-Edit
 cd frontend
 npm install
 npm start
@@ -65,9 +58,6 @@ POST	/feedback	Submit new feedback
 GET	/feedback	Get all feedback
 
 📁 Folder Structure
-sql
-Copy
-Edit
 user-feedback-system/
 ├── backend/
 │   ├── models/
@@ -80,7 +70,26 @@ user-feedback-system/
 │       └── App.js
 └── README.md
 
+## 📄 Architecture Document
 
-👤 Author
-Om Mehta
-📧 ommehta708@gmail.com
+The architecture and flow of this application is explained in the following document:
+
+[📥 View Architecture PDF](./User_Feedback_System_Architecture.pdf)
+
+
+---
+
+## 👤 Author
+
+**Om Mehta**  
+📧 ommehta708@gmail.com  
+🔗 [GitHub Profile](https://github.com/ommeht)
+
+---
+
+## 📄 Architecture Document
+
+The architecture and flow of this application is explained in the following document:
+
+[📥 View Architecture PDF](./User_Feedback_System_Architecture.pdf)
+
